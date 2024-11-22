@@ -15,7 +15,7 @@ def index():
 
 @app.route('/background')
 def background():
-    return send_file('D:/dev/github/연성대학교 AI-X 해커톤 배경.png', mimetype='image/png')
+    return send_file('연성대학교 AI-X 해커톤 배경.png', mimetype='image/png')
 
 TEMPLATE = '''
 <!doctype html>
