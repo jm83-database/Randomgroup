@@ -23,7 +23,7 @@ TEMPLATE = '''
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>랜덤 조 추첨</title>
+    <title>발표 순서 추첨</title>
     <style>
       body {
         background-image: url('/background');
@@ -66,14 +66,14 @@ TEMPLATE = '''
   </head>
   <body>
     <div class="container">
-      <h1>랜덤 조 추첨</h1>
+      <h1>발표 순서 추첨</h1>
       <form method="post">
-        <label for="num_groups">원하는 조의 숫자를 입력해주세요:</label>
+        <label for="num_groups">발표할 조의 숫자를 입력해주세요:</label>
         <input type="number" id="num_groups" name="num_groups" required>
         <button type="submit">랜덤추첨 시작</button>
       </form>
       {% if groups %}
-        <h2>랜덤 추첨된 발표 조 순서입니다.</h2>
+        <h2>랜덤 추첨된 발표 순서입니다.</h2>
         <ul>
           {% for group in groups %}
             <li>{{ group }}</li>
